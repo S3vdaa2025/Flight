@@ -13,7 +13,7 @@ from app.repositories.flight_repository import FlightRepository
 from datetime import datetime
 
 
-def load_sample_data(json_path: str = "flights_sample.json"):
+def load_sample_data(json_path: str = "data/flights_sample.json"):
     """Load sample data from JSON file"""
     with open(json_path, 'r', encoding='utf-8') as f:
         return json.load(f)
